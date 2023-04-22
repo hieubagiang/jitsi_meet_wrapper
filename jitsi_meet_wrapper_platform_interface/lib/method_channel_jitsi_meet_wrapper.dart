@@ -160,82 +160,91 @@ class MethodChannelJitsiMeetWrapper extends JitsiMeetWrapperPlatformInterface {
   }
 
   String _toFeatureFlagString(FeatureFlag featureFlag) {
-    // Constants from: https://github.com/jitsi/jitsi-meet/blob/master/react/features/base/flags/constants.js
     switch (featureFlag) {
       case FeatureFlag.isAddPeopleEnabled:
         return 'add-people.enabled';
-      case FeatureFlag.isCalendarEnabled:
-        return 'calendar.enabled';
-      case FeatureFlag.isCallIntegrationEnabled:
-        return 'call-integration.enabled';
-      case FeatureFlag.isCloseCaptionsEnabled:
-        return 'close-captions.enabled';
-      case FeatureFlag.isChatEnabled:
-        return 'chat.enabled';
-      case FeatureFlag.isInviteEnabled:
-        return 'invite.enabled';
-      case FeatureFlag.isIosRecordingEnabled:
-        return 'ios.recording.enabled';
-      case FeatureFlag.isIosScreensharingEnabled:
-        return 'ios.screensharing.enabled';
-      case FeatureFlag.isLiveStreamingEnabled:
-        return 'live-streaming.enabled';
-      case FeatureFlag.isMeetingNameEnabled:
-        return 'meeting-name.enabled';
-      case FeatureFlag.isMeetingPasswordEnabled:
-        return 'meeting-password.enabled';
-      case FeatureFlag.isPipEnabled:
-        return 'pip.enabled';
-      case FeatureFlag.isRaiseHandEnabled:
-        return 'raise-hand.enabled';
-      case FeatureFlag.isRecordingEnabled:
-        return 'recording.enabled';
-      case FeatureFlag.isTileViewEnabled:
-        return 'tile-view.enabled';
-      case FeatureFlag.isToolboxAlwaysVisible:
-        return 'toolbox.alwaysVisible';
-      case FeatureFlag.isWelcomePageEnabled:
-        return 'welcomepage.enabled';
       case FeatureFlag.isAudioFocusDisabled:
         return 'audio-focus.disabled';
       case FeatureFlag.isAudioMuteButtonEnabled:
         return 'audio-mute.enabled';
       case FeatureFlag.isAudioOnlyButtonEnabled:
         return 'audio-only.enabled';
+      case FeatureFlag.isCalendarEnabled:
+        return 'calendar.enabled';
+      case FeatureFlag.isCallIntegrationEnabled:
+        return 'call-integration.enabled';
+      case FeatureFlag.isCarModeEnabled:
+        return 'car-mode.enabled';
+      case FeatureFlag.isCloseCaptionsEnabled:
+        return 'close-captions.enabled';
       case FeatureFlag.isConferenceTimerEnabled:
         return 'conference-timer.enabled';
+      case FeatureFlag.isChatEnabled:
+        return 'chat.enabled';
       case FeatureFlag.isFilmstripEnabled:
         return 'filmstrip.enabled';
       case FeatureFlag.isFullscreenEnabled:
         return 'fullscreen.enabled';
       case FeatureFlag.isHelpButtonEnabled:
         return 'help.enabled';
+      case FeatureFlag.isInviteEnabled:
+        return 'invite.enabled';
+      case FeatureFlag.isIosRecordingEnabled:
+        return 'ios.recording.enabled';
+      case FeatureFlag.isIosScreensharingEnabled:
+        return 'ios.screensharing.enabled';
       case FeatureFlag.isAndroidScreensharingEnabled:
         return 'android.screensharing.enabled';
+      case FeatureFlag.isSpeakerstatsEnabled:
+        return 'speakerstats.enabled';
       case FeatureFlag.isKickoutEnabled:
         return 'kick-out.enabled';
+      case FeatureFlag.isLiveStreamingEnabled:
+        return 'live-streaming.enabled';
       case FeatureFlag.isLobbyModeEnabled:
         return 'lobby-mode.enabled';
+      case FeatureFlag.isMeetingNameEnabled:
+        return 'meeting-name.enabled';
+      case FeatureFlag.isMeetingPasswordEnabled:
+        return 'meeting-password.enabled';
       case FeatureFlag.isNotificationsEnabled:
         return 'notifications.enabled';
       case FeatureFlag.isOverflowMenuEnabled:
         return 'overflow-menu.enabled';
+      case FeatureFlag.isPipEnabled:
+        return 'pip.enabled';
+      case FeatureFlag.isPipWhileScreenSharingEnabled:
+        return 'pip-while-screen-sharing.enabled';
+      case FeatureFlag.isPrejoinPageEnabled:
+        return 'prejoinpage.enabled';
+      case FeatureFlag.isRaiseHandEnabled:
+        return 'raise-hand.enabled';
       case FeatureFlag.isReactionsEnabled:
         return 'reactions.enabled';
-      case FeatureFlag.isReplaceParticipantEnabled:
+      case FeatureFlag.isRecordingEnabled:
+        return 'recording.enabled';
+      case FeatureFlag.isReplaceParticipant:
         return 'replace.participant';
       case FeatureFlag.resolution:
         return 'resolution';
-      case FeatureFlag.areSecurityOptionsEnabled:
+      case FeatureFlag.isSecurityOptionsEnabled:
         return 'security-options.enabled';
       case FeatureFlag.isServerUrlChangeEnabled:
         return 'server-url-change.enabled';
+      case FeatureFlag.isSettingsEnabled:
+        return 'settings.enabled';
+      case FeatureFlag.isTileViewEnabled:
+        return 'tile-view.enabled';
+      case FeatureFlag.isToolboxAlwaysVisible:
+        return 'toolbox.alwaysVisible';
       case FeatureFlag.isToolboxEnabled:
         return 'toolbox.enabled';
       case FeatureFlag.isVideoMuteButtonEnabled:
         return 'video-mute.enabled';
       case FeatureFlag.isVideoShareButtonEnabled:
         return 'video-share.enabled';
+      case FeatureFlag.isWelcomePageEnabled:
+        return 'welcomepage.enabled';
     }
   }
 }

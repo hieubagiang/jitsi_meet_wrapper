@@ -29,6 +29,10 @@ enum FeatureFlag {
   /// Default: enabled (true).
   isCallIntegrationEnabled,
 
+// Flag indicating if car mode should be enabled.
+// Default: enabled (true).
+  isCarModeEnabled,
+
   /// Flag indicating if close captions should be enabled.
   /// Default: enabled (true).
   isCloseCaptionsEnabled,
@@ -45,7 +49,6 @@ enum FeatureFlag {
   /// Default: enabled (true).
   isFilmstripEnabled,
 
-  // TODO(saibotma): Test whether this works with the theme set on the android activity.
   /// Flag indicating if fullscreen (immersive) mode should be enabled.
   /// Default: enabled (true).
   isFullscreenEnabled,
@@ -69,6 +72,10 @@ enum FeatureFlag {
   /// Flag indicating if screen sharing should be enabled in android.
   /// Default: enabled (true).
   isAndroidScreensharingEnabled,
+
+// Flag indicating if speaker statistics should be enabled.
+// Default: enabled (true).
+  isSpeakerstatsEnabled,
 
   /// Flag indicating if kickout is enabled.
   /// Default: enabled (true).
@@ -104,6 +111,14 @@ enum FeatureFlag {
   /// Default: auto-detected.
   isPipEnabled,
 
+// Flag indicating if Picture-in-Picture button should be shown while screen sharing.
+// Default: disabled (false).
+  isPipWhileScreenSharingEnabled,
+
+// Flag indicating if the prejoin page should be enabled.
+// Default: enabled (true).
+  isPrejoinPageEnabled,
+
   /// Flag indicating if raise hand feature should be enabled.
   /// Default: enabled.
   isRaiseHandEnabled,
@@ -118,7 +133,7 @@ enum FeatureFlag {
 
   /// Flag indicating if the user should join the conference with the replaceParticipant functionality.
   /// Default: (false).
-  isReplaceParticipantEnabled,
+  isReplaceParticipant,
 
   /// Flag indicating the local and (maximum) remote video resolution. Overrides
   /// the server configuration.
@@ -127,11 +142,15 @@ enum FeatureFlag {
 
   /// Flag indicating if the security options button should be enabled.
   /// Default: enabled (true).
-  areSecurityOptionsEnabled,
+  isSecurityOptionsEnabled,
 
   /// Flag indicating if server URL change is enabled.
   /// Default: enabled (true).
   isServerUrlChangeEnabled,
+
+// Flag indicating if settings should be enabled.
+// Default: enabled (true).
+  isSettingsEnabled,
 
   /// Flag indicating if tile view feature should be enabled.
   /// Default: enabled.
